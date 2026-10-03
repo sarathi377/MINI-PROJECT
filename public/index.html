@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Sentence Corrector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="brand">
+                <div class="logo">AI</div>
+            </div>
+
+            <h1>AI Sentence Corrector</h1>
+
+            <p>
+                Improve grammar, spelling and sentence structure with AI.
+            </p>
+
+        </header>
+
+
+        <!-- Editor -->
+        <section class="card editor-card">
+
+            <div class="label-row">
+
+                <label for="sentence">
+                    Your Sentence
+                </label>
+
+                <span id="charCount">0 / 1000</span>
+
+            </div>
+
+            <textarea
+                id="sentence"
+                maxlength="1000"
+                placeholder="Enter your sentence here..."
+            ></textarea>
+
+            <div class="editor-bottom">
+
+                <span id="wordCount">
+                    0 words
+                </span>
+
+                <span>
+                    Ctrl + Enter to correct
+                </span>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="correctBtn">
+                    Correct Sentence
+                </button>
+
+                <button id="clearBtn" class="clear-btn">
+                    Clear
+                </button>
+
+            </div>
+
+            <p id="status"></p>
+
+        </section>
+
+
+        <!-- Result -->
+        <section class="card">
+
+            <div class="result-title">
+
+                <h2>Corrected Sentence</h2>
+
+                <button id="copyBtn" class="copy-btn">
+                    Copy
+                </button>
+
+            </div>
+
+            <div id="result">
+                Your corrected sentence will appear here.
+            </div>
+
+        </section>
+
+
+        <!-- Features -->
+        <section class="features">
+
+            <div class="feature-card">
+
+                <div class="check">✓</div>
+
+                <h3>Grammar</h3>
+
+                <p>
+                    Fix common grammar mistakes
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="check">✓</div>
+
+                <h3>Spelling</h3>
+
+                <p>
+                    Correct spelling and punctuation
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="check">✓</div>
+
+                <h3>AI Assisted</h3>
+
+                <p>
+                    Improve sentence readability
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+            AI-assisted corrections may vary.
+            Review important content before use.
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
